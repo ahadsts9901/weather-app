@@ -24,8 +24,8 @@ function CalculateWeather(event) {
             document.querySelector('#humidity').innerHTML = `Humidity <br/> ${response.data.main.humidity}%`
             document.querySelector('#sky').innerHTML = `Sky <br/> ${response['data']['weather']['0']['main']}`
             document.querySelector('#wind').innerHTML = `Wind <br/> ${(((response.data.wind.speed) * 2.9).toFixed())} km/h <br/> ${response.data.wind.deg}° <br/> From North`
-            document.querySelector('#min').innerHTML = `Min Temperature <br/> ${response.data.main.temp_min}°C`
-            document.querySelector('#max').innerHTML = `Max Temperature <br/> ${response.data.main.temp_max}°C`
+            document.querySelector('#min').innerHTML = `Minimum Temperature <br/> ${response.data.main.temp_min}°C`
+            document.querySelector('#max').innerHTML = `Maximum Temperature <br/> ${response.data.main.temp_max}°C`
             document.querySelector('#pressure').innerHTML = `Pressure <br/> ${response.data.main.pressure}Pascals`
             document.querySelector('#now').innerHTML = `${now}`
             document.querySelector('#image').innerHTML = `<img src='https://openweathermap.org/img/wn/${response['data']['weather']['0']['icon']}@2x.png'>`
