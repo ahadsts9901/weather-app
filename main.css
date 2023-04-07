@@ -63,7 +63,7 @@ result {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em 1em;
+    padding: 1em;
     row-gap: 1em;
     border: 2px dashed #FF7300;
     border-radius: 20px;
@@ -129,7 +129,11 @@ form {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin: 0em;
-    margin-top: 1em;
+    margin-top: 0em;
+}
+
+#skytitle {
+    color: #fff;
 }
 
 .explanation {

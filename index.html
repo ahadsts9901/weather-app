@@ -30,6 +30,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
     <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src='main.js'></script>
 </head>
@@ -47,28 +48,31 @@
         </form>
         <h3 id="city"></h3>
         <result>
+            <div id="image"></div>
+
+            <h2 id='skytitle'></h2>
+
             <h1 id='title'></h1>
 
-
             <row>
-                <p class="explanation" id="country"></p>
-                <p class="explanation" id="humidity"></p>
+                <p class="explanation" id="now"></p>
+                <p class="explanation" id="sky"></p>
             </row>
 
             <row>
-                <p class="explanation" id="sky"></p>
+                <p class="explanation" id="humidity"></p>
+                <p class="explanation" id="country"></p>
+            </row>
+
+            <row>
                 <p class="explanation" id="wind"></p>
+                <p class="explanation" id="pressure"></p>
             </row>
 
             <row>
                 <p class="explanation" id="min"></p>
                 <p class="explanation" id="max"></p>
             </row>
-
-            <!-- <row>
-                <p class="explanation"></p>
-                <p class="explanation"></p>
-            </row> -->
 
         </result>
     </content>
