@@ -30,7 +30,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
     <!-- javascript -->
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src='main.js'></script>
 </head>
 
@@ -40,41 +40,45 @@
         <h1 class='bi bi-cloud-sun-fill'></h1>
         <h2>Enter Your City</h2>
         <h2>And See Weather</h2>
-        <form onsubmit="CalculateWeather(event)">
+        <form onsubmit="CalculateWeather(event) ; return false">
             <p>Enter City Here:</p>
-            <input required id="temperature" class="input" step="0.1" type="text" placeholder="Enter City Name">
+            <input required id="cityName" class="input" step="0.1" type="text" placeholder="Enter City Name">
             <button class="button" type="submit">See Weather</button>
         </form>
-        <h2 class="normal">Weather</h2>
+        <h3 id="city"></h3>
         <result>
             <h1 id='title'></h1>
 
+
             <row>
-                <p class="explanation"></p>
-                <p class="explanation"></p>
+                <p class="explanation" id="country"></p>
+                <p class="explanation" id="humidity"></p>
             </row>
 
             <row>
-                <p class="explanation"></p>
-                <p class="explanation"></p>
+                <p class="explanation" id="sky"></p>
+                <p class="explanation" id="wind"></p>
             </row>
 
             <row>
-                <p class="explanation"></p>
-                <p class="explanation"></p>
+                <p class="explanation" id="min"></p>
+                <p class="explanation" id="max"></p>
             </row>
 
-            <row>
+            <!-- <row>
                 <p class="explanation"></p>
                 <p class="explanation"></p>
-            </row>
+            </row> -->
 
         </result>
     </content>
     <br />
     <hr />
+    <br />
     <p class="center">Thanks For Visiting</p>
+    <br />
     <p class="center">Regards! Muhammad Ahad&copy;</p>
+
 </body>
 
 </html>
