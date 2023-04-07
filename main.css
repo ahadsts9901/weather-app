@@ -1,7 +1,8 @@
 * {
     font-family: 'Nobile', 'sans-serif';
-    font-weight: bolder;
+    font-weight: bold;
     font-style: italic;
+    letter-spacing: 1px;
 }
 
 body {
@@ -92,7 +93,7 @@ form {
     border: 0px;
     padding: 0.5em 1em;
     height: 3em;
-    width: 8em;
+    width: 9em;
     border-radius: 15px;
     margin-top: 1em;
 }
@@ -108,7 +109,7 @@ form {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 4em;
+    width: 5.7em;
     height: 100%;
     border: 0px;
     /* border-radius: 20px; */
@@ -121,22 +122,29 @@ form {
     margin-top: 1em;
 }
 
-#explanation {
+.explanation {
     color: #212121;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 12em;
-    height: 100%;
+    width: 4em;
+    height: 4em;
     border: 0px;
-    /* border-radius: 20px; */
+    /* border-radius: 30px; */
     font-weight: bolder;
-    padding: 2em 1em;
+    padding: 1em;
     border-left: 5px solid #FF7300;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1em;
 }
 
 hr {
